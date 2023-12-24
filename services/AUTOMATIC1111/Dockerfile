@@ -49,6 +49,10 @@ RUN --mount=type=cache,target=/root/.cache/pip \
   git+https://github.com/mlfoundations/open_clip.git@bb6e834e9c70d9c27d0dc3ecedeebeaeb1ffad6b
 
 
+RUN pip install open-clip-torch==2.20.0
+
+
+
 COPY . /docker
 
 RUN \
